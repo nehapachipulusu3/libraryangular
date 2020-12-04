@@ -1,0 +1,12 @@
+.discord{
+    margin-top: -1280px;
+    margin-left: 250px;
+background-image: url("lib.png"); 
+  }
+  .table{
+      width: 70%;
+      margin-left: 170px;
+      background-color: silver;
+      margin-top: 15px;
+      /* position: absolute; */
+  }

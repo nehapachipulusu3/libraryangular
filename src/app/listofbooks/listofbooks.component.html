@@ -1,0 +1,33 @@
+<div class= "card discord">
+  <nav class="navbar " style="margin-left: 350px;">
+    <input class="form-control" type="text" name="bookName" [(ngModel)]="bookName" (ngModelChange)="Search()"
+     placeholder= "Enter the Book Name to search">
+    
+  </nav>
+<h1 style="text-align: center;">LIST OF BOOKS</h1>
+
+<table class="table table-striped" >
+    <thead>
+      <tr>
+        <th scope="col">Book Id</th>
+        <th scope="col">Book Name</th>
+        <th scope="col">Author Name</th>
+        <th scope="col">Book Cost</th>
+        <th scope="col">Book Type</th>
+
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <th >{{book.id}}</th>
+        <td>{{book.bookName}}</td>
+        <td>{{book.authorName}}</td>
+        <td>{{book.bookCost}}</td>
+        <td>{{book.bookType}}</td>
+
+      </tr>
+      
+    </tbody>
+  </table>
+</div>

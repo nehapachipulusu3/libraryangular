@@ -1,0 +1,21 @@
+.card{
+    background-color: white;
+    height: 100%;
+    background-size: cover;
+background-repeat: repeat;
+
+}
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color:white;
+  }
+  .no-outline:focus {
+    outline: none;
+  }
+  .discord{
+    margin-top: -1300px;
+
+  }

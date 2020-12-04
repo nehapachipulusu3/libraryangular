@@ -1,0 +1,44 @@
+.sidenav{
+    background-color:rgb(180, 186, 192);
+    width: 250px;
+    height: 1400px;
+    /* position: relative; */
+    
+    }
+    
+    .container-fluid{
+      float: left;
+      height: 100%;
+    }
+    
+    .nav-item{
+      font-size: 20px;
+      padding-top: 10px;
+      padding-left: 10px;
+      color: rgba(1, 13, 15, 0.007);
+      box-shadow: floralwhite;
+      
+      
+    }
+    
+    /* .navbar{
+      height: 130px;
+    } */
+    
+    /* .navbar img{
+      height: 10%;
+      padding-right: 25%;
+    }
+       */
+       .bg-img {
+        /* The image used */
+        background-image: url("lib.png");
+      min-height: 950px;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+        /* Needed to position the navbar */
+        position: relative;
+      }

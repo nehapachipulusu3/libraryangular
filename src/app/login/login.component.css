@@ -1,0 +1,26 @@
+.card {
+    background-color: white;
+    background-size: cover;
+    min-height: 30vh;
+    margin-top: 100px;
+  background-repeat: repeat;
+  
+
+}
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color:white;
+  }
+  .no-outline:focus {
+    outline: none;
+  }
+  /* .a{
+background-image: url("/librarymanagement/lib.png"); 
+ } */
+  .discord{
+    margin-top: -290px;
+    padding-top: -450px;
+  }

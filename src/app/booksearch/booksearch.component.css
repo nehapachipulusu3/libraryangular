@@ -1,0 +1,36 @@
+.discord{
+    margin-top: 70px;
+     margin-left: 370px;
+background-image: url("lib.png");    
+position: absolute;
+width: 1000px;
+
+
+  }
+  .table{
+    
+      width: 70%;
+      margin-left: 145px;
+      background-color: silver;
+      margin-top:20px;
+      position: relative;
+  }
+  
+  h1
+  {
+    font-size: 30px;
+      border:2px solid white;
+      /* border-radius:0px 20px 0px 20px; */
+      margin: auto;
+      padding: 10px;
+      width: 360px;
+      color: black;
+      background: silver;
+      box-shadow:0px 0px 10px skyblue;
+  }
+  nav{
+    width: 500px;
+    margin: 30px;
+    text-align: center;
+  }
+  

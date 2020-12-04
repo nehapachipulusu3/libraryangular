@@ -1,0 +1,35 @@
+
+    
+
+    <div class="a">
+        <div class="card discord col-md-4 offset-md-4" >
+            <div class="card-body">
+                <h4 class="card-title" style="text-align: center;">Update Book</h4>
+    <form #addProduct="ngForm" (ngSubmit)="updateProductIntoService()">
+        <div class="form-group">
+           <label for="bookId">Book Id</label>
+          <input type="text" class="form-control"  placeholder="Enter Book Id" required [(ngModel)]="book.id"   name="id" disabled>
+        </div>
+        <div class="form-group">
+
+          <label for="bookName">Book Name</label>
+          <input type="text" class="form-control"  placeholder="Enter BookName" required [(ngModel)]="book.bookName"   name="bookName">
+        </div>
+        <div class="form-group">
+            <label for="authorName">Author Name</label>
+            <input type="text" class="form-control"  placeholder="Enter AuthorName" required [(ngModel)]="book.authorName"  name="authorName">
+          </div>
+          <div class="form-group">
+            <label for="bookCost">Book Cost</label>
+            <input type="number" class="form-control"  placeholder="Enter BookCost" required [(ngModel)]="book.bookCost"   name="bookCost">
+          </div>
+          <div class="form-group">
+            <label for="bookType">Book Type</label>
+            <input type="text" class="form-control"  placeholder="Enter BookType" required [(ngModel)]="book.bookType"   name="bookType">
+          </div>
+        
+        <button type="submit" class="btn btn-outline-primary offset-md-5">Update</button>
+      </form>
+       </div>
+        </div>
+        </div>

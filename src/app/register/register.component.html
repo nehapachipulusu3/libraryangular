@@ -1,0 +1,37 @@
+<div class="a">
+    <div class="card discord col-md-4 offset-md-4"  >
+        <div class="card-body">
+          <h4 class="text-center text-success bg-dark" *ngIf="message">{{message}}</h4>
+            <h4 class="card-title" style="text-align: center;">Add User</h4>
+<form #addUser="ngForm"  (ngSubmit)="addUserIntoService()">
+    <div class="form-group">
+      <label for="firstName">firstName</label>
+      <input type="text" class="form-control"  placeholder="Enter firstName" required [(ngModel)]="user.firstName"   name="firstName">
+    </div>
+    <div class="form-group">
+        <label for="lastName">lastName</label>
+        <input type="text" class="form-control"  placeholder="Enter lastName" required [(ngModel)]="user.lastName"  name="lastName">
+      </div>
+      <div class="form-group">
+        <label for="userName">userName</label>
+        <input type="text" class="form-control"  placeholder="Enter userName" required [(ngModel)]="user.userName"  name="userName">
+      </div>
+      <div class="form-group">
+        <label for="email">email</label>
+        <input type="text" class="form-control"  placeholder="Enter email" required [(ngModel)]="user.email"  name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" class="form-control"  placeholder="Enter password" required [(ngModel)]="user.password"  name="password">
+      </div>
+      <div class="form-group">
+        <label for="role">role</label>
+        <input type="text" class="form-control"  placeholder="Enter role" required [(ngModel)]="user.role"  name="role">
+      </div>
+      
+     
+    <button type="submit"class="btn btn-outline-primary offset-md-5">Submit</button>
+  </form>
+   </div>
+    </div>
+    </div>

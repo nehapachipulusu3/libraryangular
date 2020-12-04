@@ -1,0 +1,60 @@
+<!-- <div style="margin-top:100px;">
+    <div class="a">
+        <div class="card col-md-4 offset-md-4" >
+            <div class="card-body">
+                <h4 class="card-title" style="text-align: center;">LOGIN</h4>
+<form #loginform="ngForm" (ngSubmit)="loginuser()">
+    <div class="form-group">
+      <label for="email">Email </label>
+      <input type="email" class="form-control" id="email" [(ngModel)]="user.email" placeholder="Enter the emailid" name=email>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="password" [(ngModel)]="user.password" placeholder="Enter the password" name="=password">
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>
+</div>
+</div>
+</div>
+   -->
+    <!-- <div class="container-fluid"> -->
+  <!-- <div class="col-md-1"></div> -->
+  <div style="margin-top: 200px;">
+  <div class="a" >
+  <div class="card discord col-md-4 offset-md-4" >
+    <div class="card-body">
+        <h4 class="card-title" style="text-align: center;">LOGIN</h4>
+        <form [formGroup]='loginForm' (ngSubmit)='login()'>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" name="email" placeholder="Enter Email" id="email" formControlName='email' [ngClass]="{'is-invalid':
+                    loginForm.get('email').touched && loginForm.get('email').invalid}"/>
+                    <div *ngIf= "loginForm.get('email').touched && loginForm.get('email').invalid" class="invalid-feedback">
+                        <div *ngIf="loginForm.get('email').errors.required">email is required</div>
+                        <div *ngIf="loginForm.get('email').errors.email">Enter Valid email</div>
+                    </div> 
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password" placeholder="Enter Password" id="password" formControlName='password'[ngClass]="{'is-invalid':
+                    loginForm.get('password').touched && loginForm.get('password').invalid}"/>
+                    <div *ngIf="loginForm.get('password').touched && loginForm.get('password').invalid" class="invalid-feedback">
+                        <div *ngIf="loginForm.get('password').errors.required">password is required</div>
+                        <div *ngIf="loginForm.get('password').errors.minlength">password must have 8 characters</div>
+                    </div>
+                </div>
+          
+                <button type="submit" class="btn btn-outline-primary offset-md-5" (click)='login()'>Submit</button>
+            
+        </form>
+  <!-- <div class="col-md-4"></div> -->
+  
+  <!-- </div> -->
+</div>
+</div>
+</div>
+</div>
